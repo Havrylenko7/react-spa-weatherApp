@@ -1,0 +1,75 @@
+.mainContentContainer {
+  padding: 24px 20px;
+  background: rgba(0, 0, 0, 0.87);
+  color: white;
+  border-radius: 12px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 
+  rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: appearance 1s backwards 1s;
+
+  .locationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    
+    .codeWrapper {
+      color: rgba(0, 0, 0, 0.87);
+      background-color: #ffffff;
+      font-size: 8px;
+      border-radius: 35%;
+      padding: 4px;
+    }
+  }
+
+  .icon {
+    padding: 36px 0;
+    width: 160px;
+    height: 160px;
+  }
+
+  .weatherContainer {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+
+    > div {
+      width: 50%;
+      padding: 12px;
+    }
+
+    > :first-child {
+      border-right: 2px solid #ffffff;
+    }
+  }
+}
+
+.primaryText {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.secondaryText {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
